@@ -49,28 +49,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.2.1</version>
+                    <configuration>
+                       <descriptors>
+                            <descriptor>zip_gen.xml</descriptor>
+                     </descriptors>
+                   </configuration>
+           </plugin>
         </plugins>
     </build>
-           <servers>
-    <server>
-      <id>nexus-release</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
-  <repositories>
-    <repository>
-      <id>my_java_app</id>
-      <url>http://http://52.174.140.174:8082/repository/my_java_app/</url>
-    </repository>
-  </repositories>
-
-    <distributionManagement>
-          <repository>
-          <id>myjavaaap</id>
-           <url>http://52.174.140.174:8082/repositories/my_java_app-release</url>
-           </repository>
-     </distributionManagement>
-
 
 </project>
