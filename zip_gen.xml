@@ -7,7 +7,7 @@
   </formats>
   <fileSets>
     <fileSet>
-      <directory>/var/lib/jenkins/workspace/java_app/</directory>
+      <directory>java_app/</directory>
     </fileSet>
   </fileSets>
 </assembly>
