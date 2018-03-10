@@ -51,6 +51,12 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+          <repository>
+          <id>sourcesup</id>
+           <url>http://52.174.140.174:8082/nexus/content/repositories/my_java_app</url>
+           </repository>
+     </distributionManagement>
 
 
 </project>
