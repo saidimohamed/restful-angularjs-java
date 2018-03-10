@@ -51,10 +51,24 @@
             </plugin>
         </plugins>
     </build>
+           <servers>
+    <server>
+      <id>nexus-release</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+  <repositories>
+    <repository>
+      <id>my_java_app</id>
+      <url>http://http://52.174.140.174:8082/repository/my_java_app/</url>
+    </repository>
+  </repositories>
+
     <distributionManagement>
           <repository>
-          <id>sourcesup</id>
-           <url>http://52.174.140.174:8082/nexus/content/repositories/my_java_app</url>
+          <id>myjavaaap</id>
+           <url>http://52.174.140.174:8082/repositories/my_java_app-release</url>
            </repository>
      </distributionManagement>
 
